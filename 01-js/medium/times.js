@@ -9,5 +9,15 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    var obj = new Date();
+    var h1 = obj.getSeconds();
+    let sum = 0;
+    for(let i = 1; i <= n; i++){
+        sum += i;
+    }
+    var obj2 = new Date();
+    var h2 = obj2.getSeconds();
+    return h2-h1;
 }
+
+console.log(calculateTime(1000000));
