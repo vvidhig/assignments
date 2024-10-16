@@ -11,7 +11,7 @@ function isPalindrome(str) {
   str1 = "";
   for(let i = 0; i < str.length; i++)
   {
-    if(str.charAt(i)!=' ' || str.charAt(i)!='!'  || str.charAt(i)!='?' || str.charAt(i)!='.'  || str.charAt(i)!=',')
+    if(str.charAt(i)!=' ' && str.charAt(i)!='!' && str.charAt(i)!='?' && str.charAt(i)!='.' && str.charAt(i)!=',')
     {
       str1 = str1 + str[i];
     }
@@ -20,14 +20,10 @@ function isPalindrome(str) {
   {
     str_rev = str_rev + str1[i];
   }
-  console.log(str_rev);
-  console.log(str1);
   if(str_rev === str1)
     return true;
   else
     return false;
 }
-
-console.log(isPalindrome('A man, a plan, a canal. Panama'));
 
 module.exports = isPalindrome;
