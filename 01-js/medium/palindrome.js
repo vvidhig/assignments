@@ -11,7 +11,7 @@ function isPalindrome(str) {
   str1 = "";
   for(let i = 0; i < str.length; i++)
   {
-    if(str[i]!=" " || str[i]!="!"  || str[i]!="@"  || str[i]!="."  || str[i]!=",")
+    if(str.charAt(i)!=' ' || str.charAt(i)!='!'  || str.charAt(i)!='?' || str.charAt(i)!='.'  || str.charAt(i)!=',')
     {
       str1 = str1 + str[i];
     }
